@@ -1,4 +1,6 @@
 MyEntry::Application.routes.draw do
+  resources :events
+
   resources :competitions
 
   # The priority is based upon order of creation:

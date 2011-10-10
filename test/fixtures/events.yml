@@ -1,0 +1,9 @@
+one:
+  competition: one
+  name: manekineko
+  is_male: true
+
+two:
+  competition: one
+  name: manekinako
+  is_male: false
