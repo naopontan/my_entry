@@ -2,7 +2,7 @@ require 'test_helper'
 
 class CompetitionsControllerTest < ActionController::TestCase
   setup do
-    @competition = competitions(:one)
+    @competition = competitions(:cat)
   end
 
   test "should get index" do

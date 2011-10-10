@@ -1,9 +1,9 @@
-one:
-  competition: one
+cat_male:
+  competition: cat
   name: manekineko
   is_male: true
 
-two:
-  competition: one
+cat_female:
+  competition: cat
   name: manekinako
   is_male: false

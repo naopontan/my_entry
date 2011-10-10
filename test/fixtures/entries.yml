@@ -1,5 +1,5 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  event: one
+saburos_entry:
+  event: cat_male
   user: saburo
