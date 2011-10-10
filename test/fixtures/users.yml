@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: taro
+  is_male: true
+
+two:
+  name: jiro
+  is_male: true
+
+saburo:
+  name: saburo
+  is_male: true
+
+hanako:
+  name: hanako
+  is_male: false
