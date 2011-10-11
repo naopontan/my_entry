@@ -5,6 +5,18 @@
   <%= @competition.name %>
 </p>
 
+<%= link_to 'New Event', new_competition_event_path(@competition) %>
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Is male</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  <%= render @competition.events %>
+</table>
+
 
 <%= link_to 'Edit', edit_competition_path(@competition) %> |
 <%= link_to 'Back', competitions_path %>
