@@ -26,5 +26,12 @@
   <% end %>
 </table>
 
+<h2>申込</h2>
+<%= form_tag(entries_path, :method => :get) do %>
+  <%= select("competition", "id", Competition.all.collect {|p| [ p.name, p.id ] }) %>
+  <%= hidden_field_tag :user_id, @user.id %>
+  <%= submit_tag '次へ' %>
+<% end %>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

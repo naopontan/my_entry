@@ -1,0 +1,15 @@
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>Competition:</b>
+  <%= @competition.name %>
+</p>
+
+<ul>
+  <% @competition.events.each do |event| %><%# FIXME: 参加可能のみリストアップせよ %>
+  <li><%= event.name %></li>
+  <% end %>
+</ul>
