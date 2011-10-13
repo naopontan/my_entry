@@ -11,5 +11,20 @@
 </p>
 
 
+<table border="1">
+  <tr>
+    <th>Competition</th>
+    <th>Event</th>
+    <th></th>
+  </tr>
+  <% @user.entries.each do |entry| %>
+  <tr>
+    <td><%= entry.competition.name %></td>
+    <td><%= entry.event.name %></td>
+    <td><%# FIXME: #= link_to 'Cancel', '') %></td>
+  </tr>
+  <% end %>
+</table>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

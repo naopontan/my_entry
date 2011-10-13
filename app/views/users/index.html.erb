@@ -4,6 +4,7 @@
   <tr>
     <th>Name</th>
     <th>Is male</th>
+    <th>申込数</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,6 +14,7 @@
   <tr>
     <td><%= user.name %></td>
     <td><%= user.is_male %></td>
+    <td><%= user.entries.count %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
     <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
