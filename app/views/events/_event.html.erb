@@ -1,7 +1,7 @@
 <tr>
   <td><%= event.name %></td>
   <td><%= event.is_male %></td>
-  <td><%= link_to 'Show', competition_event_path(event) %></td>
+  <td><%= link_to 'Show', competition_event_path(event.competition, event) %></td>
   <td><%= link_to 'Edit', edit_competition_event_path(event.competition, event) %></td>
   <td><%= link_to 'Destroy', [event.competition, event], :confirm => 'Are you sure?', :method => :delete %></td>
 </tr>
