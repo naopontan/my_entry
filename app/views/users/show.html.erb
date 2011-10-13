@@ -21,7 +21,7 @@
   <tr>
     <td><%= entry.competition.name %></td>
     <td><%= entry.event.name %></td>
-    <td><%# FIXME: #= link_to 'Cancel', '') %></td>
+    <td><%= link_to 'Cancel', entry, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
   <% end %>
 </table>
