@@ -1,9 +1,9 @@
 cat_male:
   competition: cat
-  name: manekineko
+  name: 18歳以下
   is_male: true
 
 cat_female:
   competition: cat
-  name: manekinako
+  name: 19歳以上
   is_male: false

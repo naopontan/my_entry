@@ -11,10 +11,8 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :competition_id %><br />
-    <%= f.text_field :competition_id %>
-  </div>
+  <h2><%= @event.competition.name %></h2>
+
   <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
