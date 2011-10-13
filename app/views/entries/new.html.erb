@@ -1,0 +1,22 @@
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>Competition:</b>
+  <%= @event.competition.name %>
+</p>
+
+<p>
+  <b>Event:</b>
+  <%= @event.name %>
+</p>
+
+<%= form_for @entry do |f| %>
+  <%= f.hidden_field :event_id %>
+  <%= f.hidden_field :user_id %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to 'Back', :back %><%# 手抜き %>

@@ -9,7 +9,9 @@
 </p>
 
 <ul>
-  <% @competition.events.each do |event| %><%# FIXME: 参加可能のみリストアップせよ %>
-  <li><%= event.name %></li>
+  <% @competition.events.where(:is_male => @user.is_male?).each do |event| %><%# TODO: 要リファクタリングの臭い %>
+  <li><%= event.name %> <%= link_to('参加する', new_entry_path(:user_id => @user.id, :event_id => event.id)) %></li>
   <% end %>
 </ul>
+
+<%= link_to 'Back', user_path(@user) %>

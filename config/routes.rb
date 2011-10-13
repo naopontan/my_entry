@@ -5,7 +5,7 @@ MyEntry::Application.routes.draw do
     resources :events, :except => [:index]
   end
 
-  resources :entries, :only => [:destroy, :index]
+  resources :entries, :only => [:destroy, :index, :new, :create]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
