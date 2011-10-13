@@ -3,6 +3,7 @@
 <table>
   <tr>
     <th>Name</th>
+    <th>Events count</th>
     <th></th>
     <th></th>
     <th></th>
@@ -11,6 +12,7 @@
 <% @competitions.each do |competition| %>
   <tr>
     <td><%= competition.name %></td>
+    <td align="right"><%= competition.events.count %></td>
     <td><%= link_to 'Show', competition %></td>
     <td><%= link_to 'Edit', edit_competition_path(competition) %></td>
     <td><%= link_to 'Destroy', competition, :confirm => 'Are you sure?', :method => :delete %></td>
